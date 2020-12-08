@@ -1,0 +1,46 @@
+body {
+    background-color: rgb(181, 168, 199);
+}
+
+container {
+    margin: auto;
+    text-align: center;
+}
+
+#start {
+    margin-left: 48%;
+    margin-right: 50%;
+    background-color: ivory;
+}
+
+#rightOrWrong {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+#countdown {
+    position: absolute;
+    top: 3px;
+    left: 80%;
+}
+
+#enterName {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    font-size: 1em;
+}
+
+#scoreCont {
+    padding-left: 10px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border: solid, black;
+    width: 50%;
+    font-size: 1em;
+}

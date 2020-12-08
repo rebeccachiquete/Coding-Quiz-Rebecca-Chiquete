@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Yo Mind</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="container">
+        <h1 id="header">So You Think You Can Code?</h1>
+        <h4 id="description">When you click the Begin button you will be asked a series of questions.
+            <br>
+            A timer will start when a question appears. You then answer. 
+            <br>
+            Once you have answered you will be presented with another question
+            <br>
+            If you answer incorrectly time will be deducted from the clock. 
+            <br> 
+            The quiz will end when all answers are completed or the timer reached to 0.
+            <br>
+            When the quiz is complete you will be able to type in your initials and see your score on the score board. 
+        </h4>
+        <button id="start">begin</button>
+    </div>
+
+    <section id="quiz" style="display: none;">
+        <div id= "questions"></div>
+        <div id= "rightOrWrong"></div>
+        <div id= "options">
+            <button id= "answer1" value="ans1"></button>
+            <button id= "answer2" value="ans2"></button>
+            <button id= "answer3" value="ans3"></button>
+            <button id= "answer4" value="ans4"></button>
+        </div>
+        <div id="countdown">60</div>
+    </section>
+
+    
+    <div id= "scoreCont" style="display: none;">
+        <form>
+        <p id= "score">SCORE</p>
+        <p id= "Time Left">TIME LEFT</p>
+        <input id= "enterName" placeholder="ENTER NAME">
+        <ul id= "classification" style="list-style: none;"></ul>
+        <button type="button" onclick="refresh()">START OVER</button>
+        <button type="button" onclick="clear()">CLEAR & START OVER</button>
+        </form>
+    </div>
+
+<script src="script.js"></script>   
+</body>
+</html>
